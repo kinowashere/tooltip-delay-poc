@@ -9,7 +9,7 @@ const FooButton = () => {
       <Tooltip.Trigger>
         <Button onClick={() => setIsOpen(!isOpen)}>{text}</Button>
       </Tooltip.Trigger>
-      <Tooltip.Content className="backface">Look at me</Tooltip.Content>
+      <Tooltip.Content>Look at me</Tooltip.Content>
     </Tooltip>
   );
 };
