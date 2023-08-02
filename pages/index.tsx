@@ -5,7 +5,7 @@ const FooButton = () => {
   const [isOpen, setIsOpen] = useState(false);
   const text = isOpen ? "Close the tooltip" : "Click to open the test tooltip";
   return (
-    <Tooltip open={true}>
+    <Tooltip open={isOpen}>
       <Tooltip.Trigger>
         <Button onClick={() => setIsOpen(!isOpen)}>{text}</Button>
       </Tooltip.Trigger>
